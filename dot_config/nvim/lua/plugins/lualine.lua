@@ -1,0 +1,78 @@
+-- return { { "nvim-lualine/lualine.nvim", enabled = false } }
+
+-- return {
+--   "nvim-lualine/lualine.nvim",
+--   event = "VeryLazy",
+--   opts = function()
+--     local colors = {
+--       purple = "#9A348E",
+--       pink = "#DA627D",
+--       orange = "#FCA17D",
+--       blue = "#86BBD8",
+--       teal = "#06969A",
+--       navy = "#33658A",
+--       black = "#000000",
+--       white = "#FFFFFF",
+--     }
+--
+--     local custom_theme = {
+--       normal = {
+--         a = { fg = colors.black, bg = colors.purple, gui = 'bold' },
+--         b = { fg = colors.white, bg = colors.pink },
+--         c = { fg = colors.white, bg = colors.orange },
+--       },
+--       insert = { a = { fg = colors.black, bg = colors.blue, gui = 'bold' } },
+--       visual = { a = { fg = colors.black, bg = colors.orange, gui = 'bold' } },
+--       replace = { a = { fg = colors.black, bg = colors.teal, gui = 'bold' } },
+--     }
+--
+--     local function get_os_icon()
+--       local os = vim.loop.os_uname().sysname
+--       if os == "Linux" then return " "
+--       elseif os == "Darwin" then return ""
+--       elseif os == "Windows_NT" then return " "
+--       else return "" end
+--     end
+--
+--     return {
+--       options = {
+--         theme = custom_theme,
+--         component_separators = '',
+--         section_separators = { left = '', right = '' },
+--         globalstatus = true,
+--       },
+--       sections = {
+--         lualine_a = {
+--           { get_os_icon, padding = { left = 1, right = 0 } },
+--           { 'mode', separator = { left = '', right = '' }, right_padding = 2, left_padding = 0 },
+--         },
+--         lualine_b = {
+--           { 'filename', path = 1, shorting_target = 40, separator = { right = '' } },
+--           { 'branch', icon = '󰊤', separator = { right = '' } },
+--         },
+--         lualine_c = {
+--           { 'diagnostics', separator = { right = '' } },
+--         },
+--         lualine_x = {
+--           { 'diff', separator = { left = '' } },
+--           { 'filetype', separator = { left = '◄' } },
+--         },
+--         lualine_y = {
+--           { 'progress', separator = { left = '◄' } },
+--           { 'location', separator = { left = '' } },
+--         },
+--         lualine_z = {
+--           { function() return ' ' .. os.date("%R") end },
+--         },
+--       },
+--       inactive_sections = {
+--         lualine_a = {},
+--         lualine_b = {},
+--         lualine_c = {'filename'},
+--         lualine_x = {'location'},
+--         lualine_y = {},
+--         lualine_z = {}
+--       },
+--     }
+--   end,
+-- }
