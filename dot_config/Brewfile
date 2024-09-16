@@ -23,5 +23,6 @@ cask "aerospace"
 cask "spotify"
 cask "flutter"
 cask "google-chrome"
+cask "neovide"
 
 mas "Xcode", id: 497799835
