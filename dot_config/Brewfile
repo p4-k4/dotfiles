@@ -19,7 +19,7 @@ cask "kitty"
 cask "google-chrome"
 cask "aerospace"
 cask "spotify"
-# cask "flutter"
-# cask "google-chrome"
+cask "flutter"
+cask "google-chrome"
 
-# mas "Xcode", id: 497799835
+mas "Xcode", id: 497799835
