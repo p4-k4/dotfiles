@@ -1,0 +1,23 @@
+tap "nikitabobko/tap"
+
+brew "zsh-syntax-highlighting"
+brew "zsh-autosuggestions"
+brew "starship"
+brew "autojump"
+brew "node"
+brew "neovim"
+brew "cocoapods"
+brew "rust"
+brew "bash-language-server"
+brew "zsh"
+brew "chezmoi"
+
+
+cask "font-jetbrains-mono"
+cask "kitty"
+cask "google-chrome"
+cask "aerospace"
+# cask "flutter"
+# cask "google-chrome"
+
+# mas "Xcode", id: 497799835
