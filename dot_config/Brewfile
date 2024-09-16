@@ -12,6 +12,7 @@ brew "rust"
 brew "bash-language-server"
 brew "zsh"
 brew "fd"
+brew "rg"
 brew "chezmoi"
 
 
