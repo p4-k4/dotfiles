@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Set keyboard repeat rate and delay
+defaults write -g InitialKeyRepeat -int 10
+defaults write -g KeyRepeat -int 1
+
 brew bundle --file ~/.config/Brewfile
 
 # Check if Oh My Zsh is installed and if not, install it.
@@ -21,3 +25,6 @@ fi
 
 # Set starship preset
 starship preset pastel-powerline -o ~/.config/starship.toml
+
+# Restart the SystemUIServer to apply keyboard settings
+killall SystemUIServer
