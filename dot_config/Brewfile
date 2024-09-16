@@ -11,6 +11,7 @@ brew "cocoapods"
 brew "rust"
 brew "bash-language-server"
 brew "zsh"
+brew "fd"
 brew "chezmoi"
 
 
