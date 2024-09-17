@@ -2,7 +2,7 @@
 
 # Set keyboard repeat rate and delay
 defaults write -g InitialKeyRepeat -int 10
-defaults write -g KeyRepeat -int 1
+defaults write -g KeyRepeat -int 2
 
 brew bundle --file ~/.config/Brewfile
 
