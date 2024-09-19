@@ -15,6 +15,10 @@ brew "fd"
 brew "rg"
 brew "chezmoi"
 
+# Haskell
+brew "ghc"
+brew "cabal-install"
+
 
 cask "font-jetbrains-mono"
 cask "kitty"
